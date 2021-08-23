@@ -1,0 +1,32 @@
+//
+//   1. List
+//   2. Wrapper
+//   3. Letter
+//
+
+.word {
+  // 1. List
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  font-family: 'Courier New', Courier, monospace;
+  text-transform: uppercase;
+  padding: 0;
+  margin: 0;
+
+  // 2. Wrapper
+  &-wrapper {
+    display: flex;
+    justify-content: center;
+  }
+
+  // 3. Letter
+  &__letter {
+    padding: 0px 8px;
+    font-size: 2rem;
+  }
+  &__space {
+    padding: 0px 10px;
+  }
+}

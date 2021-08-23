@@ -1,0 +1,43 @@
+//
+//   1. Wrapper
+//   2. Letter
+//
+
+// 1. Wrapper
+.letters-wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  text-transform: uppercase;
+  margin-top: 8px;
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 1000px;
+}
+
+// 2. Letter
+.letter {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 40px;
+  height: 40px;
+  padding: 6px 12px;
+  margin: 5px;
+  cursor: pointer;
+  user-select: none;
+  border: solid 1px $purple;
+  border-radius: 10px;
+
+  &:hover {
+    background-color: $lightGreen;
+  }
+
+  &--inactive {
+    background-color: $grey;
+  }
+
+  &--inactive:hover {
+    background-color: $grey;
+  }
+}
